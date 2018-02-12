@@ -392,7 +392,7 @@ As with any other connector in Mule, each message received by the HTTP Listener 
 image:http+request+parts+white3.png[http+request+parts+white3]
 
 [NOTE]
-If the Path of the connector is defined as `{domain}/login`, then `mydomain` is considered a *URI Parameter*. It can be referenced by the following expression: +
+If the Path of the connector is defined as `{domain}/login`, then `domain` is considered a *URI Parameter*. It can be referenced by the following expression: +
 `#[message.inboundProperties.'http.uri.params'.domain]`
 
 === The Request Body
